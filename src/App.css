@@ -1,38 +1,197 @@
-.App {
+.page-description-div {
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-description-title {
+  font-size: 24px;
+  font-weight: 400;
   text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-description {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 769px) {
+  .page-description-div {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    max-width: 750px;
+  }
+  .page-description-title {
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  .page-description {
+    font-size: 22px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filters-bar {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  padding: 12px 0;
+}
+
+.filter-seperator {
+  flex-grow: 0;
+  align-self: stretch;
+}
+
+.filter-text {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 85px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter-recommended-button {
+  border: none;
+  background-color: white;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.filter-arrow-down-icon {
+  font-size: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.filters-item-count-text {
+  display: none;
+}
+
+.filter-show-button {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .filters-bar {
+    padding-top: 24px 0;
+    margin-left: 96px;
+    margin-right: 96px;
+    margin-bottom: 32px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .filter-text,
+  .filter-seperator {
+    display: none;
   }
+
+  .filters-item-count-text {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 75px;
+  }
+
+  .filter-show-button {
+    width: 138px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    color: #888792;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .filter-recommended-button {
+    margin-left: auto;
+    font-size: 18px;
+    flex-grow: 0;
+  }
+}
+
+.products-and-filters {
+  margin-left: 15.5px;
+  margin-right: 15.5px;
+  display: flex;
+}
+
+.products-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  flex-wrap: wrap;
+  gap: 16px 8px;
+}
+
+@media screen and (min-width: 769px) {
+  .products-and-filters {
+    margin-left: 96px;
+    margin-right: 96px;
+  }
+
+  .products-list {
+    gap: 32px 16px;
+  }
+}
+
+.filters-tab {
+  min-height: 100vh;
+  min-width: 300px;
+}
+
+.filters-customize-div {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 26px;
+}
+#customizble {
+  height: 22px;
+  width: 22px;
+  color: #4d4d4d;
+}
+
+.filters-customize-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.filter-hr {
+  border: 1px solid #e5e5e5;
+}
+
+.filter-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.filter-category-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.filter-arrow-button {
+  border: none;
+  background-color: white;
+}
+
+.filter-category-type {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
